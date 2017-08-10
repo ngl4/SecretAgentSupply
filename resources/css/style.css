@@ -1,19 +1,120 @@
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 html, 
 body {
 
 	font-size: 18px;
 	font-family: Helvetica;
-	margin-right: 32px;
-	margin-left: 32px;
+
 }
+
+
 
 #logo-brandname{
 
 	background-color: black;
-	height: 2.87rem;
+	height: 3rem;
+	
+}
+
+.logo-brandname-container {
+
+	width: 960px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.logo {
+
+	padding-top: 0.66rem;
+	padding-bottom: 0.66rem;
+	padding-left: 0.5rem;
+	padding-right: 1rem;
+
+}
+
+.logo img {
+
+	height: 1.5rem;
+}
+
+
+.brandname {
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.brandname span {
+
+	color: white;
+}
+
+
+#header {
+
+	background-image: url('../images/moto.jpeg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25rem;
 	width: 100%;
 }
 
+.header-box {
+
+	height: 25rem;
+	width: 960px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.arrival-container {
+
+	background-color: black;
+	width: 25rem;
+	box-sizing: border-box;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 3rem;
+
+}
+
+.new-arrival {
+
+	margin-bottom: 0.3rem;
+}
+
+.new-arrival span {
+
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.bikes-motors span {
+
+	color: white;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+
+/*
+
+The wrong codes that I did before relearning all
+the css concepts again!!! As you see above, relearning 
+can ACTUALLY be REALLY HELPFUL!!!!
 
 .logo-brandname-container,
 .arrival-container,
@@ -62,3 +163,5 @@ body {
 	bottom: 0.66rem;
 
 }
+
+*/

@@ -1,0 +1,64 @@
+html, 
+body {
+
+	font-size: 18px;
+	font-family: Helvetica;
+	margin-right: 32px;
+	margin-left: 32px;
+}
+
+#logo-brandname{
+
+	background-color: black;
+	height: 2.87rem;
+	width: 100%;
+}
+
+
+.logo-brandname-container,
+.arrival-container,
+.navigation-container,
+.menu-container,
+.location-hours-container,
+.footer-container{
+
+	width: 960px;
+	position: absolute;
+	left: 32px;
+	right: 32px;
+	float: center;
+
+}
+
+.logo-brandname-container {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+
+.logo {
+
+	position: absolute;
+	top: 0.66rem;
+	bottom: 0.66rem;
+	left: 0.5rem;
+	right: 1rem;
+	float: left;
+}
+
+.logo img {
+
+	height: 1.5rem;
+}
+
+.brandname span {
+
+	color: white;
+	font-size: 1rem;
+	position: absolute;
+	top: 0.66rem;
+	bottom: 0.66rem;
+
+}

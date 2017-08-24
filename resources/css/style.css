@@ -217,7 +217,96 @@ body {
 
 /*Location and Hours*/
 
+#location-hours {
 
+}
+
+.location-hours-container {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 3rem;
+	margin: auto;
+	width: 960px;
+}
+
+.location-box,
+.hours-box {
+
+	width: 35%;
+}
+
+.location, 
+.hours {
+
+	background-color: black;
+	padding-left: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.location span,
+.hours span {
+
+	color: white;
+}
+
+.location-point span,
+.hours-time span {
+
+	color: black;
+	text-align: left;
+}
+
+
+/*Footer*/
+
+#footer {
+
+	width: 100%;
+	height: auto;
+	margin-top: 4rem;
+	background-color: black;
+
+}
+
+
+
+.footer-container {
+
+	width: 960px;
+	height: 10rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 8.8rem;
+}
+
+.footer-container span {
+
+	color: white;
+}
+
+
+/*Media Query that Targets a Screen Width less than 1024px*/
+
+@media only screen and (max-width: 1024px) {
+
+#navigation {
+
+
+}
+
+.navigation-container {
+
+	
+} 
+
+
+
+}
 
 
 /*

@@ -10,6 +10,7 @@ body {
 
 	font-size: 18px;
 	font-family: Helvetica;
+	overflow-x: hidden;
 
 }
 
@@ -70,6 +71,7 @@ body {
 	background-size: cover;
 	height: 25rem;
 	width: 100%;
+	margin: auto;
 }
 
 .header-box {
@@ -113,6 +115,66 @@ body {
 }
 
 
+/*Media Query that Targets a Screen Width less than 470px*/
+
+@media only screen and (max-width: 470px) , (orientation: portrait) {
+
+	#header {
+
+		background-image: url('../images/moto.jpeg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 15rem;
+		width: 100%;
+		margin: auto;
+	}
+
+	.header-box {
+
+		height: 15rem;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.arrival-container {
+
+		background-color: black;
+		width: 100%;
+		box-sizing: border-box;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 2rem;
+		margin-top: 10rem;
+
+	}
+
+	.new-arrival {
+
+		margin-bottom: 0.3rem;
+	}
+
+	.new-arrival span {
+
+		color: white;
+		font-size: 0.77rem;
+		font-weight: bold;
+	}
+
+	.bikes-motors span {
+
+		color: white;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+
+
+}
+
+
+
+
 /*Navigation*/
 
 #navigation {
@@ -144,6 +206,81 @@ body {
 	padding-bottom: 0.75rem;
 }
 
+.menu-nav {
+
+	display: none;
+}
+
+
+/*Media Query that Targets a Screen Width less than 1024px*/
+
+@media only screen and (max-width: 1024px) , (orientation: portrait) {
+
+	#navigation {
+
+		width: 100%;
+		background-color: firebrick;
+		background-size: cover;
+		color: white;
+
+	}
+
+	.navigation-container {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+	
+	} 
+
+	.eyewear-nav,
+	.apparel-nav,
+	.gadgets-nav,
+	.vehicles-nav,
+	.classes-nav,
+	.contact-nav {
+
+		display: none;
+		
+	}
+
+	.menu-nav {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding-top: 0.75rem;
+		padding-bottom: 0.75rem;
+	}
+
+}
+
+
+/*Media Query that Targets a Screen Width less than 470px*/
+
+@media only screen and (max-width: 470px) , (orientation: portrait) {
+
+	.navigation-container {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+	
+	} 
+
+
+}
+
+
+
+
+
+
 
 /*Menu List */
 
@@ -168,10 +305,9 @@ body {
 .item-2-box,
 .item-3-box {
 
-	border: 4px solid black;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 	width: 30%;
 
 }
@@ -180,8 +316,11 @@ body {
 .item-2-image,
 .item-3-image {
 
+	border: 4px solid black;
 	padding-top: 4rem;
 	padding-bottom: 4rem;
+	display: flex;
+	justify-content: center;
 }
 
 .item-1-image img,
@@ -200,7 +339,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 16rem;
+	width: auto;
 
 }
 
@@ -212,6 +351,87 @@ body {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 }
+
+/*Media Query that Targets a Screen Width less than 1024px*/
+
+@media only screen and (max-width: 1024px) , (orientation: portrait) {
+
+	.menu-container {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: auto;
+		margin: 0 auto;
+		padding-top: 3rem;
+	
+	}
+
+	.item-3-box {
+
+		display: none;
+	}
+
+	.item-1-box,
+	.item-2-box {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 47%;
+		margin: 0 auto;
+
+	}
+
+	.item-1-text,
+	.item-2-text {
+
+		background-color: black;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: auto;
+
+	}
+
+
+}
+
+@media only screen and (max-width: 470px) , (orientation: portrait) {
+
+	.menu-container {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: auto;
+		margin: 0 auto;
+		padding-top: 3rem;
+	
+	}
+
+	.item-2-box {
+
+		display: none;
+	}
+
+	.item-1-box {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90%;
+		margin: 0 auto;
+
+	}
+
+
+}
+
+
+
 
 
 
@@ -227,7 +447,7 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	padding-top: 3rem;
-	margin: auto;
+	margin: 0 auto;
 	width: 960px;
 }
 
@@ -235,6 +455,7 @@ body {
 .hours-box {
 
 	width: 35%;
+
 }
 
 .location, 
@@ -258,6 +479,58 @@ body {
 	color: black;
 	text-align: left;
 }
+
+@media only screen and (max-width: 1024px) , (orientation: portrait) {
+
+	.location-hours-container {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 3rem;
+		margin: auto;
+		width: auto;
+	}
+
+
+	.location-box,
+	.hours-box {
+
+		width: 35%;
+		margin: auto 1rem;
+	}
+
+}
+
+@media only screen and (max-width: 470px) , (orientation: portrait) {
+
+	.location-hours-container {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 3rem;
+		margin: auto;
+		width: auto;
+	}
+
+
+	.location-box,
+	.hours-box {
+
+		width: 90%;
+	}
+
+	.hours-box {
+
+		margin-top: 0.5rem;
+	}
+
+
+}
+
 
 
 /*Footer*/
@@ -290,22 +563,18 @@ body {
 }
 
 
-/*Media Query that Targets a Screen Width less than 1024px*/
+@media only screen and (max-width: 470px) , (orientation: portrait) {
 
-@media only screen and (max-width: 1024px) {
+	.footer-container {
 
-#navigation {
-
-
-}
-
-.navigation-container {
-
-	
-} 
-
-
-
+		width: auto;
+		height: 10rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		
+	}
 }
 
 
